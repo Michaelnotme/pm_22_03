@@ -1,6 +1,32 @@
 # Labs progress
-I - x
-II - x
-III - x
-IV - x
-V - x
+
+<table>
+  <thead>
+    <tr>
+      <th>Labs</th>
+      <th>Progress</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I</td>
+      <td>Not finished</td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>Not finished</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>Not finished</td>
+    </tr>
+    <tr>
+      <td>IV</td>
+      <td>Not finished</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>Not finished</td>
+    </tr>
+  </tbody>
+</table>
