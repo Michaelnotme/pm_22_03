@@ -10,7 +10,7 @@
   <tbody>
     <tr>
       <td>I</td>
-      <td>Not finished</td>
+      <td>In progress...</td>
     </tr>
     <tr>
       <td>II</td>
