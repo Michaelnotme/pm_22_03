@@ -3,16 +3,27 @@ const sass = require('gulp-sass')(require('sass'));
 const cssnano = require ('gulp-cssnano');
 const browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
+const fileInclude = require('gulp-file-include'); // підключаємо
 
 // HTML
 function htmlTask() {
-    return src('app/html/**/*.html')
-        .pipe(dest('dist/html'));
+    return src(['app/html/**/*.html', '!app/html/parts/**/*.html'])
+        .pipe(fileInclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(dest('dist'))
+        .pipe(browserSync.stream());
 }
 
 function indexTask() {
     return src('app/index.html')
-        .pipe(dest('dist'));
+        .pipe(fileInclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(dest('dist'))
+        .pipe(browserSync.stream());
 }
 
 // SCSS
