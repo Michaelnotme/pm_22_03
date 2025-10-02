@@ -7,29 +7,16 @@ const fileInclude = require('gulp-file-include'); // підключаємо
 
 // HTML
 function htmlTask() {
-    return src(['app/html/**/*.html', '!app/html/parts/**/*.html'])
-        .pipe(fileInclude({
-            prefix: '@@',
-            basepath: '@file'
-        }))
-        .pipe(dest('dist'))
-        .pipe(browserSync.stream());
-}
-
-function indexTask() {
-    return src('app/index.html')
-        .pipe(fileInclude({
-            prefix: '@@',
-            basepath: '@file'
-        }))
+    return src('app/html/index.html')
+        .pipe(fileInclude({ prefix: '@@', basepath: '@file' }))
         .pipe(dest('dist'))
         .pipe(browserSync.stream());
 }
 
 // SCSS
 function scssTask() {
-    return src('app/scss/**/*.scss')
-        .pipe(sass())
+    return src('app/scss/style.scss')   // головний файл
+        .pipe(sass().on('error', sass.logError))
         .pipe(cssnano())
         .pipe(dest('dist/css'))
         .pipe(browserSync.stream());
@@ -54,7 +41,6 @@ function serve() {
     watch('app/scss/**/*.scss', scssTask);
     watch('app/js/**/*.js', jsTask).on('change', browserSync.reload);
     watch('app/img/**/*', imgTask).on('change', browserSync.reload);
-    watch('app/index.html', indexTask).on('change', browserSync.reload);
 }
 
-exports.default = parallel(htmlTask, indexTask, scssTask, jsTask, imgTask, serve);
+exports.default = parallel(htmlTask, scssTask, jsTask, imgTask, serve);
