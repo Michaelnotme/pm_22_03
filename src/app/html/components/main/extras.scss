@@ -1,0 +1,70 @@
+/* --- EXTRA Section Title Block Styles (applies to both) --- */
+
+/* Icon Wrapper for the circular black background (reused style) */
+.extra-icon-wrapper {
+  background-color: #333; /* Black background */
+  border-radius: 50%; /* Makes it a circle */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title Styling (reused style) */
+.extra-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- LANGUAGE List Styles --- */
+
+.language-list {
+  /* Use flex to create the two-column appearance */
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; /* Ensure no default bullets */
+  padding-left: 0;
+}
+
+.language-item {
+  /* Each item takes up half the width of its parent column */
+  width: 50%;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem; /* Small vertical spacing */
+}
+
+/* Add the custom bullet point using a pseudo-element */
+.language-item::before {
+  content: "•";
+  color: #333; /* Dark bullet color */
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+/* --- HOBBIES List Styles --- */
+
+.hobbies-list {
+  list-style: none; /* Ensure no default bullets */
+  padding-left: 0;
+}
+
+.hobby-item {
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* Add the custom bullet point using a pseudo-element */
+.hobby-item::before {
+  content: "•";
+  color: #333; /* Dark bullet color */
+  font-weight: 700;
+  margin-right: 0.5rem;
+}

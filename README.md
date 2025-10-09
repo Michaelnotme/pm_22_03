@@ -14,11 +14,11 @@
     </tr>
     <tr>
       <td>II</td>
-      <td>In progress...</td>
+      <td>Finished</td>
     </tr>
     <tr>
       <td>III</td>
-      <td>Not finished</td>
+      <td>In progress...</td>
     </tr>
     <tr>
       <td>IV</td>

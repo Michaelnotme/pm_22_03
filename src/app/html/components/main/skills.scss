@@ -1,0 +1,55 @@
+/* --- SKILLS Title Block Styles --- */
+
+/* Icon Wrapper for the circular black background */
+.skill-icon-wrapper {
+  background-color: #333; /* Black background */
+  border-radius: 50%; /* Makes it a circle */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title Styling */
+.skills-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- SKILL BAR Styles --- */
+
+.skill-item {
+  display: flex; /* Makes skill name and bar align horizontally */
+  align-items: center;
+  margin-bottom: 1.5rem; /* Space between each skill item */
+}
+
+.skill-name {
+  /* Style for the skill text (Adobe Photoshop, etc.) */
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  width: 50%; /* Gives the skill name half the width of the column */
+  padding-right: 1rem; /* Space before the bar starts */
+}
+
+.skill-bar-container {
+  /* The static gray background of the entire bar */
+  flex-grow: 1; /* Takes up the remaining space in the skill-item flex container */
+  height: 8px; /* Height of the bar */
+  background-color: #ddd; /* Light gray background */
+  border-radius: 4px; /* Rounded ends */
+  overflow: hidden; /* Ensures the fill stays within the rounded container */
+}
+
+.skill-bar-fill {
+  /* The dark gray fill representing the skill level */
+  height: 100%;
+  background-color: #333; /* Dark gray fill color */
+  border-radius: 4px;
+  transition: width 0.5s ease; /* Smooth animation if skills are loaded dynamically */
+}

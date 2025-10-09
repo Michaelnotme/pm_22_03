@@ -1,0 +1,16 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+// Права панель
+.main {
+  flex: 1;
+  padding: 0;
+  margin-left: 120px;
+
+  section {
+    margin-bottom: 30px;
+  }
+}
