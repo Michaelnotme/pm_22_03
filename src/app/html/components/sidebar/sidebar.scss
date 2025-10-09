@@ -1,0 +1,116 @@
+$secondary-color: #ffffff;
+$dark-bg: #333;
+
+.sidebar {
+  background-color: #ece9e9;
+  margin-left: 12px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid $secondary-color;
+    margin-bottom: 5px;
+  }
+}
+
+.sidebar_upper_text {
+  background-color: $dark-bg;
+  padding-top: max(40px, 15%);
+  height: 8%;
+  max-height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.photo-container-shape{
+  width: 100%;
+  height: 300px;
+  background: $dark-bg;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+}
+
+.dark-sidebar {
+  background-color: $dark-bg;
+  color: white;
+  //padding-bottom: 30px;
+}
+
+.sidebar-icon-wrapper {
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.content-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.content-subtext {
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+/* === Education Section === */
+.education-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-half-circle {
+  min-height: 150px;
+  background: $dark-bg;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+}
+
+.education-half-circle .content-heading {
+  margin-bottom: 0 !important;
+}
+
+.education-dark-block {
+  background-color: $dark-bg;
+}
+.education-half-circle h2 {
+  margin-bottom: 0 !important; /* ensure header itself has no margin */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar-title {
+    font-size: 1.25rem;
+  }
+  .content-heading {
+    font-size: 0.9rem;
+  }
+}

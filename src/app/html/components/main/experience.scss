@@ -1,0 +1,18 @@
+/* Icon Wrapper for the circular black background */
+.job-icon-wrapper {
+  background-color: #333; /* Black background */
+  border-radius: 50%; /* Makes it a circle */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure SVG fills its container without being too large */
+.job-icon-wrapper svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Other CSS styles for title and job entries are unchanged */
