@@ -1,6 +1,16 @@
 $secondary-color: #ffffff;
 $dark-bg: #333;
 
+@mixin uppercase-title-style($font-size, $font-weight: 700, $letter-spacing: 1px) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+}
+.sidebar-title {
+  @include uppercase-title-style(1.5rem); // The font-size is passed here.
+  color: white;
+}
 .sidebar {
   background-color: #ece9e9;
   margin-left: 12px;
@@ -38,7 +48,6 @@ $dark-bg: #333;
 .dark-sidebar {
   background-color: $dark-bg;
   color: white;
-  //padding-bottom: 30px;
 }
 
 .sidebar-icon-wrapper {
@@ -54,14 +63,6 @@ $dark-bg: #333;
     width: 28px;
     height: 28px;
   }
-}
-
-.sidebar-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 1px;
 }
 
 .content-heading {
@@ -87,10 +88,12 @@ $dark-bg: #333;
   display: flex;
   flex-direction: column;
 }
-
+.education-dark-block {
+  background-color: $dark-bg;
+}
 .education-half-circle {
   min-height: 150px;
-  background: $dark-bg;
+  @extend .education-dark-block;
   border-top-left-radius: 300px;
   border-top-right-radius: 300px;
 }
@@ -99,9 +102,6 @@ $dark-bg: #333;
   margin-bottom: 0 !important;
 }
 
-.education-dark-block {
-  background-color: $dark-bg;
-}
 .education-half-circle h2 {
   margin-bottom: 0 !important; /* ensure header itself has no margin */
 }
