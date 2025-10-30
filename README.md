@@ -22,11 +22,11 @@
     </tr>
     <tr>
       <td>IV</td>
-      <td>In progress...</td>
+      <td>Finished</td>
     </tr>
     <tr>
       <td>V</td>
-      <td>Not finished</td>
+      <td>In progress...</td>
     </tr>
   </tbody>
 </table>
