@@ -9,7 +9,7 @@ const rename = require('gulp-rename');
 
 // HTML
 function htmlTask() {
-    return src('src/app/html/index.html')
+    return src('src/app/index.html')
         .pipe(fileInclude({ prefix: '@@', basepath: '@file' }))
         .pipe(dest('dist'))
         .pipe(browserSync.stream());
@@ -42,14 +42,20 @@ function imgTask() {
         .pipe(imagemin())
         .pipe(dest('dist/img'));
 }
+
+function dataTask() {
+    return src('src/app/data.json', { encoding: false })
+        .pipe(dest('dist'));
+}
 // Reloading
 function serve() {
     browserSync.init( { server: { baseDir: 'dist' } });
-    watch('src/app/html/**/*.html', htmlTask).on('change', browserSync.reload);
+    watch('src/app/components/**/*.html', htmlTask).on('change', browserSync.reload);
     watch('src/app/scss/**/*.scss', scssTask);
-    watch('src/app/html/**/*.scss', scssTask);
+    watch('src/app/components/**/*.scss', scssTask);
     watch('src/app/js/**/*.js', jsTask).on('change', browserSync.reload);
     watch('src/app/img/**/*', imgTask).on('change', browserSync.reload);
+    watch('src/app/data.json', dataTask).on('change', browserSync.reload);
 }
 
-exports.default = parallel(htmlTask, scssTask, jsTask, imgTask, serve);
+exports.default = parallel(htmlTask, dataTask, jsTask, imgTask, serve);

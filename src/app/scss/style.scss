@@ -3,10 +3,10 @@ $primary-color: #eae4e4;
 $secondary-color: #ffffff;
 $text-color: #444;
 $light-gray: #f8f8f8;
-@use "../html/components/main/main.scss";
-@use "../html/components/sidebar/sidebar.scss";
-@use "../html/components/main/about.scss";
-@use "../html/components/main/experience.scss";
-@use "../html/components/main/skills.scss";
-@use "../html/components/main/extras.scss";
+@use "../components/main/main.scss";
+@use "../components/sidebar/sidebar.scss";
+@use "../components/main/about.scss";
+@use "../components/main/experience.scss";
+@use "../components/main/skills.scss";
+@use "../components/main/extras.scss";
 

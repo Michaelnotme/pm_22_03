@@ -1,0 +1,65 @@
+{
+  "firstName": "NOEL",
+  "lastName": "TAYLOR",
+  "subtitle": "GRAPHIC & WEB DESIGNER",
+  "contacts": {
+    "phone": "+1-718-310-5588",
+    "website": "www.yourwebsite.com",
+    "location": "769 Prudence, Lincoln Park, MI"
+  },
+  "education": [
+    {
+      "university": "STANFORD UNIVERSITY",
+      "degree": "MASTER DEGREE GRADUATE",
+      "years": "2011 - 2013"
+    },
+    {
+      "university": "UNIVERSITY OF CHICAGO",
+      "degree": "BACHELOR DEGREE GRADUATE",
+      "years": "2007 - 2010"
+    }
+  ],
+  "experience": [
+    {
+      "title": "SENIOR WEB DESIGNER",
+      "company": "Creative Agency / Chicago",
+      "years": "2020 - Present",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when unknown printer took a galley of type."
+    },
+    {
+      "title": "GRAPHIC DESIGNER",
+      "company": "Creative Market / Chicago",
+      "years": "2015 - 2020",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when unknown printer took a galley of type."
+    },
+    {
+      "title": "MARKETING MANAGER",
+      "company": "Manufacturing Agency / NJ",
+      "years": "2013 - 2015",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when unknown printer took a galley of type."
+    }
+  ],
+  "skills": [
+    { "name": "Adobe Photoshop", "level": 85 },
+    { "name": "Microsoft Word", "level": 75 },
+    { "name": "HTML-S/CSS-3", "level": 80 },
+    { "name": "Adobe Illustrator", "level": 70 },
+    { "name": "Microsoft Powerpoint", "level": 65 }
+  ],
+  "languages": ["ENGLISH", "FRENCH", "SPANISH", "GERMAN"],
+  "hobbies": ["READING BOOKS", "TRAVELING", "PLAYING CHESS"],
+  "references": [
+    {
+      "name": "DARWIN B. MAGANA",
+      "address": "2813 Shobe Lane Mancos, CO.",
+      "phone": "+1-970-533-3393",
+      "email": "www.yourwebsite.com"
+    },
+    {
+      "name": "ROBERT J. BELVIN",
+      "address": "2119 Fairfax Drive Newark, NJ.",
+      "phone": "+1-908-987-5103",
+      "email": "www.yourwebsite.com"
+    }
+  ]
+}

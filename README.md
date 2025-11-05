@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <td>V</td>
-      <td>In progress...</td>
+      <td>Finished</td>
     </tr>
   </tbody>
 </table>
